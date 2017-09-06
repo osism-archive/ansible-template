@@ -14,11 +14,11 @@
 #   hosts: all
 #
 #   roles:
-#   - role: osism.docker
+#     - role: osism.docker
 
 - name: Playbook for role testing
   hosts: all
   connection: paramiko
 
   roles:
-  - role: ../../ansible-template
+    - role: ../../ansible-template
