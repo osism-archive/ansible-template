@@ -1,9 +1,9 @@
 ---
-#- name: Playbook for preparations
-#  hosts: all
+# - name: Playbook for preparations
+#   hosts: all
 #
-#  roles:
-#  - role: osism.docker
+#   roles:
+#   - role: osism.docker
 
 - name: Playbook for role testing
   hosts: all
