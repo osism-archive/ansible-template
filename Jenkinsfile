@@ -20,6 +20,10 @@ node {
     stage('Test 2.3') {
       sh 'tox -e ansible23'
     }
+
+    stage('Test 2.4') {
+      sh 'tox -e ansible24'
+    }
   }
 
   catch (err) {
