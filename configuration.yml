@@ -1,0 +1,6 @@
+---
+files:
+ - Jenkinsfile
+ - README.md
+ - test-requirements.txt
+ - tox.ini
