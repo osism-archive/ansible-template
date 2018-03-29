@@ -22,6 +22,9 @@ env:
 script:
   - tox -e $TOX_ENV
 
+after_failure:
+  - tox -e destroy
+
 notifications:
   irc:
     channels:
