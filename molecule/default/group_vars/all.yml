@@ -42,5 +42,5 @@ keypair_name: "molecule{{ lookup('env', 'TRAVIS_JOB_ID')|default('') }}"
 keypair_path: "{{ lookup('env', 'MOLECULE_EPHEMERAL_DIRECTORY') }}/ssh_key"
 
 nova:
-  image: "{{ lookup('env', 'MOLECULE_IMAGE')|default('Ubuntu 16.04 (Xenial Xerus)', true) }}"
+  image: "{{ lookup('env', 'MOLECULE_IMAGE')|default('Ubuntu 16.04 (20180628)', true) }}"
   flavor: 1C-1GB-10GB
