@@ -9,7 +9,7 @@
       seconds: 10
 
   - name: Install required packages
-    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+    raw: test -e /usr/bin/python || (apt clean && apt update && apt install -y python-minimal)
     become: true
     changed_when: false
 
