@@ -2,6 +2,7 @@
 - name: Prepare instance for use with Ansible
   hosts: all
   gather_facts: false
+  no_log: "{{ not lookup('env', 'MOLECULE_DEBUG') | bool }}"
 
   tasks:
   - name: A short pause, in order to be sure the instance is ready
