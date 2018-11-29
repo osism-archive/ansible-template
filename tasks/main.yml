@@ -1,5 +1,5 @@
 ---
-- name: template - create dummy file
+- name: Create dummy file
   copy:
     content: ""
     dest: /tmp/dummy
