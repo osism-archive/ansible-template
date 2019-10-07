@@ -22,6 +22,8 @@ env:
   - TOX_ENV=ansible27-bionic
   - TOX_ENV=ansible28-xenial
   - TOX_ENV=ansible28-bionic
+  - TOX_ENV=ansible29-xenial
+  - TOX_ENV=ansible29-bionic
 
 script:
   - tox -e $TOX_ENV
