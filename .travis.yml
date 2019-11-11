@@ -7,7 +7,7 @@ cache:
     - $HOME/.cache/pip
 
 before_install:
-  - openssl aes-256-cbc -K $encrypted_0aa4db5f6f62_key -iv $encrypted_0aa4db5f6f62_iv -in molecule/default/clouds.yml.enc -out molecule/default/clouds.yml -d
+  - openssl aes-256-cbc -K $encrypted_9b0bfdb5b757_key -iv $encrypted_9b0bfdb5b757_iv -in molecule/default/clouds.yml.enc -out molecule/default/clouds.yml -d
 
 install:
   - pip install -r requirements.txt

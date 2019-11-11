@@ -1,3 +1,3 @@
 ---
 ansible_role_name: template
-travis_decrypt_key: 0aa4db5f6f62
+travis_decrypt_key: 9b0bfdb5b757
