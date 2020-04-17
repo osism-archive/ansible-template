@@ -1,5 +1,5 @@
 ---
-- git: https://github.com/osism/travis.git
+- git: https://github.com/osism/travis-master.git
   version: master
   files:
     - src: molecule/ansible.cfg
@@ -18,6 +18,8 @@
       dst: ./.gitignore
     - src: ansible/render-template.py
       dst: scripts/render-template.py
+    - src: ansible/trigger-travis.sh
+      dst: scripts/trigger-travis.sh
     - src: ansible/meta.yml
       dst: meta/main.yml
     - src: ansible/README.md
@@ -25,9 +27,9 @@
     - src: ansible/.travis.yml
       dst: ./
       post_commands:
-        - python scripts/render-template.py .travis.yml
-        - python scripts/render-template.py README.md
-        - python scripts/render-template.py meta/main.yml
-        - python scripts/render-template.py molecule/default/molecule.yml
-        - python scripts/render-template.py tox.ini
+        - python3 scripts/render-template.py .travis.yml
+        - python3 scripts/render-template.py README.md
+        - python3 scripts/render-template.py meta/main.yml
+        - python3 scripts/render-template.py molecule/default/molecule.yml
+        - python3 scripts/render-template.py tox.ini
         - rm -f scripts/render-template.py
