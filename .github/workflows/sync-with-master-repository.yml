@@ -3,7 +3,7 @@ name: Sync with master repository
 
 on:
   schedule: 
-    - cron: "* * * * *"
+    - cron: "0 * * * *"
 
 jobs:
   sync-with-master-repository:
@@ -17,6 +17,7 @@ jobs:
       - uses: technote-space/create-pr-action@v2
         with:
           EXECUTE_COMMANDS: |
+            gilt overlay
             gilt overlay
           COMMIT_MESSAGE: 'Sync with master repository'
           COMMIT_NAME: 'GitHub Actions'
