@@ -1,3 +1,7 @@
+TESTING
+TESTING
+TESTING
+
 # Ansible osism.template
 
 [![Build Status](https://travis-ci.org/osism/ansible-template.svg?branch=master)](https://travis-ci.org/osism/ansible-template)
