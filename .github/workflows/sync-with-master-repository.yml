@@ -17,10 +17,9 @@ jobs:
           EXECUTE_COMMANDS: |
             gilt overlay
             gilt overlay
-          COMMIT_EMAIL: 'github+actions@osism.de'
           COMMIT_MESSAGE: 'chore: sync with master repository'
           COMMIT_NAME: 'GitHub Actions'
-          ONLY_DEFAULT_BRANCH: true
-          PR_BRANCH_NAME: 'sync-with-master-repository'
+          COMMIT_EMAIL: 'github+actions@osism.de'
           PR_BRANCH_PREFIX: 'chore/'
+          PR_BRANCH_NAME: 'sync-with-master-repository'
           PR_TITLE: 'chore: sync with master repository'
